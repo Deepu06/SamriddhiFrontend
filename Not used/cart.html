@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Cart</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>My Cart</h1>
+    <table class="table mt-4">
+      <thead>
+        <tr>
+          <th>Product Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="cartItems">
+        <!-- Cart items will be dynamically generated here -->
+      </tbody>
+    </table>
+    <div class="mt-3">
+      <h5>Total: <span id="totalAmount"></span></h5>
+    </div>
+    <div class="mt-3">
+      <button class="btn btn-primary" id="checkoutBtn">Checkout</button>
+    </div>
+  </div>
+
+  <!-- Include Bootstrap and jQuery JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Include your own custom JS file -->
+  <script src="/path/to/your/js/file.js"></script>
+</body>
+</html>

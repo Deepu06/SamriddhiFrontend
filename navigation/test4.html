@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Member Management System</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-2">
+        <h4>Left Navigation</h4>
+        <button id="addMemberBtn" class="btn btn-primary mt-3">Add Member</button>
+        <button id="memberDetailsBtn" class="btn btn-primary mt-3">Member Details</button>
+      </div>
+      <div class="col-md-10">
+        <h4>Main Content</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Member Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Register Member</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="registerForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Member Details Modal -->
+  <div class="modal fade" id="memberDetailsModal" tabindex="-1" role="dialog" aria-labelledby="memberDetailsModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="memberDetailsModalLabel">Member Details</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table id="memberDetailsTable" class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody id="memberDetailsTableBody">
+              <!-- Member details will be dynamically populated here -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // JavaScript code

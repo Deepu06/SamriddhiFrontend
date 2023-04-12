@@ -1,0 +1,29 @@
+/* Sidebar styles */
+.sidebar {
+    min-height: 100vh;
+    
+  }
+  
+  /* Main content styles */
+  .main-content {
+    min-height: 100vh;
+  }
+  
+  /* Center the modal */
+  .modal-dialog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .bg-primary {
+    background-color: #2F4F4F!important;
+}
+  }
+  
+  /* Add some padding to the modal content */
+  .modal-content {
+    padding: 20px;
+  }
+  
